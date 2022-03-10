@@ -1,0 +1,12 @@
+/* TECHNOS */
+.technos .carousel .slide img {
+    height: 100px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 990px) {
+    .technos .carousel .slide img {
+        height: 100px;
+        object-fit: contain;
+    }
+}

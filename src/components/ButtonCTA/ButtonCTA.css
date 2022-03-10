@@ -1,0 +1,33 @@
+.btn-cta {
+    overflow: hidden;
+    display: block;
+    background: transparent;
+    margin-bottom: 2rem;
+    border: 1px solid var(--yellow);
+    padding: 1.5rem 2rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: createBox .25s;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-cta::before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    transform: translateX(100%);
+    background: var(--yellow);
+    border-radius: 50px;
+    transition: all 0.25s ease-out;
+}
+
+.btn-cta:hover:before {
+    transform: translateX(0);
+}

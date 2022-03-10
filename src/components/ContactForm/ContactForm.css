@@ -1,0 +1,60 @@
+#contact-form {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    text-transform: uppercase;
+}
+
+#contact-form input, #contact-form textarea {
+    background: var(--ghost);
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 2rem;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+#contact-form input:nth-child(1) {
+    margin-top: 0;
+}
+
+#contact-form textarea {
+    border-radius: 25px;
+    resize: none;
+}
+
+#contact-form .contact-alert-success {
+    background: var(--success);
+    border-radius: 50px;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+#contact-form .contact-alert-error {
+    background: var(--danger);
+    border-radius: 50px;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+#contact-form .contact-warning {
+    margin-top: .5rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media screen and (min-width: 990px) {
+    #contact-form {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #contact-form input, #contact-form textarea {
+        margin-top: 1rem;
+    }
+}

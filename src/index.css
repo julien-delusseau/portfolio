@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --yellow: rgba(255, 180, 0, 1);
+    --yellow-transparent: rgba(255, 180, 0, .5);
+    --ghost: rgba(255, 255, 255, .1);
+    --transparent: rgba(0, 0, 0, .8);
+    --transparent-light: rgba(0, 0, 0, .5);
+    --dark-white: #bbb;
+    --grey: #252525;
+    --danger: #FF2E63;
+    --success: #00B8A9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom right, #111, #222);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+hr {
+    margin: 2rem auto;
+    border: 0;
+    border-top: 1px solid var(--ghost);
+    width: 50%;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.yellow {
+    color: var(--yellow) !important;
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+@media screen and (min-width: 990px) {
+    hr {
+        margin: 4rem auto;
+    }
 }

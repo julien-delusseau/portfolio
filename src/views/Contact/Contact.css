@@ -1,0 +1,54 @@
+#contact {
+    min-height: 100vh;
+    padding: 1.2rem 2rem 5rem;
+    background: rgba(0, 212, 255, 0);
+    text-align: center;
+}
+
+#contact h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#contact .contact-subtitle {
+    margin: 1rem 0 3rem;
+}
+
+#contact ul li {
+    display: flex;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+#contact ul li div {
+    margin-left: 2rem;
+}
+
+#contact ul li i {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 990px) {
+    #contact {
+        padding: 4rem 18% 10rem;
+    }
+
+    #contact h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+
+    #contact .contact-subtitle {
+        font-size: 1.5rem;
+    }
+
+    #contact ul {
+        margin-right: 4rem;
+    }
+
+    #contact .contact-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
