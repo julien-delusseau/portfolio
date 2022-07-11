@@ -38,8 +38,8 @@
 @media screen and (min-width: 990px) {
   #home {
     height: 100vh;
-    padding: 0;
     padding-left: 6rem;
+    margin-bottom: 0;
     background: linear-gradient(
       68deg,
       var(--yellow) 26%,
