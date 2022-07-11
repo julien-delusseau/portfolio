@@ -17,7 +17,9 @@ export const CustomModal = ({
     >
       <div className="Modal-anchor">
         <div className="modal-top">
-          <h2>{title}</h2>
+          <a rel="noopener noreferrer" target="_blank" href={link}>
+            <h2>{title}</h2>
+          </a>
           <button
             title="Fermer le modal"
             className="close-modal"
