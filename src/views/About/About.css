@@ -1,107 +1,107 @@
 #about {
-    min-height: 100vh;
-    padding: 1.2rem 2rem 5rem;
-    background: rgba(0, 212, 255, 0);
-    text-align: center;
+  min-height: 100vh;
+  padding: 1.2rem 2rem 5rem;
+  background: rgba(0, 212, 255, 0);
+  text-align: center;
 }
 
 #about h1 {
-    text-transform: uppercase;
-    font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #about h1 span {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 #about h3 {
-    font-weight: 500;
-    margin-bottom: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 #about .avatar {
-    margin-bottom: 2rem;
-    border-radius: 100%;
-    border: 8px solid var(--ghost);
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+  border: 8px solid var(--ghost);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 #about .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#about .content-block {
+  width: 50%;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: var(--dark-white);
+}
+
+#about .content-block p:nth-child(1) {
+  text-transform: capitalize;
+}
+
+#about .content-block--infos {
+  font-weight: 600;
+  color: #fff;
+}
+
+@media screen and (min-width: 990px) {
+  #about {
+    padding: 4rem 18% 5rem;
+  }
+
+  #about h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  #about h1 span {
+    color: var(--yellow);
+  }
+
+  #about h3 {
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: left;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  #about .personnal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  #about .avatar {
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    border: 8px solid var(--ghost);
+  }
+
+  #about .content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-}
+  }
 
-#about .content-block {
+  #about .content-block {
     width: 50%;
     text-align: left;
     margin-bottom: 1.5rem;
     color: var(--dark-white);
-}
+  }
 
-#about .content-block p:nth-child(1) {
-    text-transform: capitalize;
-}
-
-#about .content-block--infos {
+  #about .content-block--infos {
     font-weight: 600;
     color: #fff;
-}
-
-@media screen and (min-width: 990px) {
-    #about {
-        padding: 4rem 18% 5rem;
-    }
-
-    #about h1 {
-        font-size: 4rem;
-        margin-bottom: 3rem;
-    }
-
-    #about h1 span {
-        color: var(--yellow);
-    }
-
-    #about h3 {
-        font-weight: 500;
-        margin-bottom: 3rem;
-        text-align: left;
-        font-size: 2rem;
-        text-transform: uppercase;
-    }
-
-    #about .personnal-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-direction: row-reverse;
-    }
-
-    #about .avatar {
-        margin-bottom: 2rem;
-        border-radius: 100%;
-        border: 8px solid var(--ghost);
-    }
-
-    #about .content {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    #about .content-block {
-        width: 50%;
-        text-align: left;
-        margin-bottom: 1.5rem;
-        color: var(--dark-white);
-    }
-
-    #about .content-block--infos {
-        font-weight: 600;
-        color: #fff;
-    }
+  }
 }

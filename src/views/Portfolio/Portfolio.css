@@ -1,43 +1,67 @@
 #portfolio {
-    min-height: 100vh;
-    padding: 1.2rem 2rem 10rem;
-    background: rgba(0, 212, 255, 0);
-    text-align: center;
+  min-height: 100vh;
+  padding: 1.2rem 2rem 10rem;
+  background: rgba(0, 212, 255, 0);
+  text-align: center;
 }
 
 #portfolio h1 {
-    text-transform: uppercase;
-    font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #portfolio .subtitle {
-    margin-bottom: 3rem;
-    font-weight: 500;
+  font-weight: 500;
 }
 
 #portfolio .cards-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#portfolio .switches-container {
+  margin-bottom: 3rem;
+}
+
+#portfolio .switches {
+  border: 1px solid var(--yellow);
+  background: var(--grey);
+  padding: 1rem;
+  width: 164px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 0 1rem;
+}
+
+#portfolio .switches:hover,
+#portfolio .switches.active {
+  color: var(--grey);
+  background: var(--yellow);
 }
 
 @media screen and (min-width: 990px) {
-    #portfolio {
-        padding: 4rem 18% 10rem;
-    }
+  #portfolio {
+    padding: 4rem 18% 10rem;
+  }
 
-    #portfolio h1 {
-        font-size: 4rem;
-    }
+  #portfolio h1 {
+    font-size: 4rem;
+  }
 
-    #portfolio .subtitle {
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        margin-bottom: 6rem;
-    }
+  #portfolio .subtitle {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+  }
 
-    #portfolio .cards-container {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-    }
+  #portfolio .cards-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
 }
